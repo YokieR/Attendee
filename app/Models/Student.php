@@ -7,9 +7,11 @@ use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Laravel\Sanctum\HasApiTokens;
 
+use Illuminate\Database\Eloquent\SoftDeletes;
+
 class Student extends Authenticatable
 {
-    use HasApiTokens, HasFactory, Notifiable;
+    use HasApiTokens, HasFactory, Notifiable, SoftDeletes;
 
     protected $fillable = [
         'registration_number',
@@ -20,8 +22,11 @@ class Student extends Authenticatable
         'current_semester',
         'faculty',
         'password',
+        'device_uuid',
+        'profile_picture_url',
         'is_verified',
         'verification_code',
+        'account_status',
     ];
 
     protected $hidden = [

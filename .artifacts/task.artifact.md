@@ -1,0 +1,21 @@
+# Task List - Laravel Admin Backend Implementation
+
+- [x] 1. Database & Models
+    - [x] Create migration for `system_settings`
+    - [x] Create `SystemSetting` model
+    - [x] Create `AuditLog` model
+- [x] 2. Admin Controller Implementation (`AdminController.php`)
+    - [x] Update `getStats` for comprehensive dashboard metrics
+    - [x] Implement Student management methods (`getStudents`, `resetStudentDevice`, `toggleStudentStatus`)
+    - [x] Implement Lecturer management methods (`getLecturers`, `assignLecturerCourse`)
+    - [x] Implement Course management methods (`getCourses`, `createCourse`)
+    - [x] Implement Session & Attendance methods (`getActiveSessions`, `getAttendanceRecords`)
+    - [x] Implement Device & Anomaly methods (`getDevices`, `getAnomalies`, `resolveAnomaly`)
+    - [x] Implement System Configuration methods (`getSettings`, `updateSettings`, `getLogs`)
+- [x] 3. Auth Controller Update
+    - [x] Update `login` to record `last_login_at`
+- [x] 4. Routes Configuration
+    - [x] Register all admin endpoints in `api.php`
+- [x] 5. Verification
+    - [x] Build/Syntax check
+    - [x] Endpoint verification summary

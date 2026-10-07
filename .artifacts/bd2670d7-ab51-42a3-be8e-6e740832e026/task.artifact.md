@@ -1,0 +1,5 @@
+- [x] Create migration to add `device_uuid` to `students` table
+- [x] Update `Student` model with `device_uuid`
+- [x] Implement `getTimetable` and `getNotifications` in `StudentController`
+- [x] Enhance `checkIn` logic in `AttendanceController`
+- [x] Verify changes with manual/automated tests
